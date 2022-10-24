@@ -1,15 +1,12 @@
-61qV1VXxLZPDD8dsxvnRGg3bT2BZ8AvcQMRmzAVzVn6R
 
+# Solana GIF board.
 
-🚀 Starting test...
-📝 Your transaction signature 4HzeBedJBKWm5919VbUcCGdkGSjFDnqe1fWD2RrAVzhXT6et9QymeCHR59zXaESS4tZAQ7fwDohAuqkeDKVMe5o7
-👀 GIF Count 0
-👀 GIF Count 1
-👀 GIF List [
-  {
-    gifLink: 'https://media3.giphy.com/media/Ie4CIIvQS0bk3zwZlM/giphy.gif?cid=ecf05e47uxzh47y0jmqqwewbjs7lt5cbxodu1pq09znzkktt&rid=giphy.gif&ct=g',
-    userAddress: PublicKey {
-      _bn: <BN: 2abfee8822d4d76fc6e5a26c28848dd7ce08a4e98c69b4d802f3ba51a1cde342>
-    }
-  }
-]
+This project implements the backend for a GIF board as a **Solana smart contract**.
+
+The contract holds a list of GIFs along with the name of the person who submitted them.
+
+The [frontend(https://github.com/scheuclu/gif-portal-starter) then calls this contract as a database.
+
+The public address of this contract is [GZnUtzwNfMrsK7U9NZT1PwrgnUnu6z9cGwc1v1Q7e5ta](https://explorer.solana.com/address/GZnUtzwNfMrsK7U9NZT1PwrgnUnu6z9cGwc1v1Q7e5ta?cluster=devnet).
+
+The contract is only deployed to the devnet.
