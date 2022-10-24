@@ -23,7 +23,10 @@ const main = async() => {
   console.log('👀 GIF Count', account.totalGifs.toString())
 
   // You'll need to now pass a GIF link to the function! You'll also need to pass in the user submitting the GIF!
-  await program.rpc.addGif("https://media3.giphy.com/media/Ie4CIIvQS0bk3zwZlM/giphy.gif?cid=ecf05e47uxzh47y0jmqqwewbjs7lt5cbxodu1pq09znzkktt&rid=giphy.gif&ct=g", {
+  await program.rpc.addGif(
+    "https://media3.giphy.com/media/Ie4CIIvQS0bk3zwZlM/giphy.gif?cid=ecf05e47uxzh47y0jmqqwewbjs7lt5cbxodu1pq09znzkktt&rid=giphy.gif&ct=g",
+    "Lukas",
+    {
     accounts: {
       baseAccount: baseAccount.publicKey,
       user: provider.wallet.publicKey,

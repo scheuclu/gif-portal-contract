@@ -2,7 +2,7 @@
 seeds = false
 skip-lint = false
 [programs.devnet]
-myepicproject = "61qV1VXxLZPDD8dsxvnRGg3bT2BZ8AvcQMRmzAVzVn6R"
+myepicproject = "GZnUtzwNfMrsK7U9NZT1PwrgnUnu6z9cGwc1v1Q7e5ta"
 
 [registry]
 url = "https://api.apr.dev"
@@ -13,3 +13,4 @@ wallet = "/Users/lukas/.config/solana/id.json"
 
 [scripts]
 test = "node tests/myepicproject.js"
+
