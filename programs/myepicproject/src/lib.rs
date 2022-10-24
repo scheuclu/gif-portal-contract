@@ -12,14 +12,16 @@ pub mod myepicproject {
   }
 
   // The function now accepts a gif_link param from the user. We also reference the user from the Context
-  pub fn add_gif(ctx: Context<AddGif>, gif_link: String) -> Result <()> {
+  pub fn add_gif(ctx: Context<AddGif>, gif_link: String, submitter_name: String) -> Result <()> {
     let base_account = &mut ctx.accounts.base_account;
     let user = &mut ctx.accounts.user;
 
 	// Build the struct.
     let item = ItemStruct {
       gif_link: gif_link.to_string(),
+      user_name: submitter_name.to_string(),
       user_address: *user.to_account_info().key,
+      
     };
 		
 	// Add it to the gif_list vector.
@@ -51,6 +53,7 @@ pub struct AddGif<'info> {
 #[derive(Debug, Clone, AnchorSerialize, AnchorDeserialize)]
 pub struct ItemStruct {
     pub gif_link: String,
+    pub user_name: String,
     pub user_address: Pubkey,
 }
 
